@@ -15,6 +15,8 @@
 		0F8DDC351C59C0C400A21074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8DDC331C59C0C400A21074 /* LaunchScreen.storyboard */; };
 		0F8DDC401C59C0C400A21074 /* popupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DDC3F1C59C0C400A21074 /* popupTests.m */; };
 		0F8DDC4B1C59C0C400A21074 /* popupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DDC4A1C59C0C400A21074 /* popupUITests.m */; };
+		0F8DDC601C59C19C00A21074 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DDC5F1C59C19C00A21074 /* SearchViewController.m */; };
+		0F8DDC631C59C65200A21074 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DDC621C59C65200A21074 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0F8DDC461C59C0C400A21074 /* popupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = popupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8DDC4A1C59C0C400A21074 /* popupUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = popupUITests.m; sourceTree = "<group>"; };
 		0F8DDC4C1C59C0C400A21074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F8DDC5E1C59C19C00A21074 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		0F8DDC5F1C59C19C00A21074 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		0F8DDC611C59C65200A21074 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0F8DDC621C59C65200A21074 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +112,14 @@
 				0F8DDC2B1C59C0C400A21074 /* ViewController.h */,
 				0F8DDC2C1C59C0C400A21074 /* ViewController.m */,
 				0F8DDC2E1C59C0C400A21074 /* Main.storyboard */,
+				0F8DDC611C59C65200A21074 /* HomeViewController.h */,
+				0F8DDC621C59C65200A21074 /* HomeViewController.m */,
 				0F8DDC311C59C0C400A21074 /* Assets.xcassets */,
 				0F8DDC331C59C0C400A21074 /* LaunchScreen.storyboard */,
 				0F8DDC361C59C0C400A21074 /* Info.plist */,
 				0F8DDC251C59C0C400A21074 /* Supporting Files */,
+				0F8DDC5E1C59C19C00A21074 /* SearchViewController.h */,
+				0F8DDC5F1C59C19C00A21074 /* SearchViewController.m */,
 			);
 			path = popup;
 			sourceTree = "<group>";
@@ -272,6 +282,8 @@
 			files = (
 				0F8DDC2D1C59C0C400A21074 /* ViewController.m in Sources */,
 				0F8DDC2A1C59C0C400A21074 /* AppDelegate.m in Sources */,
+				0F8DDC601C59C19C00A21074 /* SearchViewController.m in Sources */,
+				0F8DDC631C59C65200A21074 /* HomeViewController.m in Sources */,
 				0F8DDC271C59C0C400A21074 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = popup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vampco.popup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = popup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vampco.popup;
 				PRODUCT_NAME = "$(TARGET_NAME)";

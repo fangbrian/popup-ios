@@ -17,6 +17,7 @@
 		0F8DDC4B1C59C0C400A21074 /* popupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DDC4A1C59C0C400A21074 /* popupUITests.m */; };
 		0F8DDC601C59C19C00A21074 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DDC5F1C59C19C00A21074 /* SearchViewController.m */; };
 		0F8DDC631C59C65200A21074 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8DDC621C59C65200A21074 /* HomeViewController.m */; };
+		0F8DDC651C5B038300A21074 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8DDC641C5B038300A21074 /* SearchCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		0F8DDC5F1C59C19C00A21074 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		0F8DDC611C59C65200A21074 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		0F8DDC621C59C65200A21074 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0F8DDC641C5B038300A21074 /* SearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				0F8DDC251C59C0C400A21074 /* Supporting Files */,
 				0F8DDC5E1C59C19C00A21074 /* SearchViewController.h */,
 				0F8DDC5F1C59C19C00A21074 /* SearchViewController.m */,
+				0F8DDC641C5B038300A21074 /* SearchCell.xib */,
 			);
 			path = popup;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8DDC351C59C0C400A21074 /* LaunchScreen.storyboard in Resources */,
+				0F8DDC651C5B038300A21074 /* SearchCell.xib in Resources */,
 				0F8DDC321C59C0C400A21074 /* Assets.xcassets in Resources */,
 				0F8DDC301C59C0C400A21074 /* Main.storyboard in Resources */,
 			);

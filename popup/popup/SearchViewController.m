@@ -21,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self initializeTableView];
 }
 
@@ -55,7 +56,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     self.tableView.layoutMargins = UIEdgeInsetsZero;
-    return 2;
+    return 20;
     //return [self.searchItems count];    //count number of row from counting array hear cataGorry is An Array
 }
 
@@ -81,6 +82,10 @@
     if ([tableView respondsToSelector:@selector(setLayoutMargins:)]) {
         [tableView setLayoutMargins:UIEdgeInsetsZero];
     }
+    
+    UIView* separatorLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 1)];
+    separatorLineView.backgroundColor = [UIColor clearColor]; // set color as you want.
+    [cell.contentView addSubview:separatorLineView];
 }
 
 -(void)viewDidLayoutSubviews
@@ -106,6 +111,14 @@
             }
     
     cell.textLabel.text = @"My Text";
+    
+    UIView *view = [[UIView alloc] initWithFrame: CGRectMake (0, 0, self.view.frame.size.width - 10, cell.frame.size.height - 5)];
+    view.tag = 1;
+    view.center = CGPointMake(self.view.frame.size.width/2, cell.frame.size.height/2);
+    
+    [view setBackgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:0.6]];
+    [cell.contentView addSubview:view];
+    cell.separatorInset = UIEdgeInsetsMake(0, 160, 0, 160);
     return cell;
 }
 

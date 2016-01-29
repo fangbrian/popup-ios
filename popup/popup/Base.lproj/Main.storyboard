@@ -43,7 +43,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="niv-8Q-Ab7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="niv-8Q-Ab7">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="503"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,7 +57,7 @@
                             </tableView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.063701923076923128" green="0.053254163603672758" blue="0.057126998959288952" alpha="0.81769935344827582" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="niv-8Q-Ab7" firstAttribute="leading" secondItem="7c5-9u-2id" secondAttribute="leading" id="CTs-hV-AxX"/>
                             <constraint firstAttribute="trailing" secondItem="niv-8Q-Ab7" secondAttribute="trailing" id="Ejr-8r-8Pz"/>

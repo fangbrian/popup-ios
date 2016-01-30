@@ -44,27 +44,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="niv-8Q-Ab7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="503"/>
+                                <rect key="frame" x="0.0" y="97" width="600" height="503"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.26390224359999997" green="0.26390224359999997" blue="0.26390224359999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.54456397249999999" green="0.54456397249999999" blue="0.54456397249999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="rJI-sI-Zg0" id="2UA-co-lVP"/>
                                     <outlet property="delegate" destination="rJI-sI-Zg0" id="wEG-yE-Y4z"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Tq-lZ-UJq">
+                                <rect key="frame" x="0.0" y="53" width="600" height="44"/>
+                                <animations/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rJI-sI-Zg0" id="cy9-ma-5wH"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.063701923076923128" green="0.053254163603672758" blue="0.057126998959288952" alpha="0.81769935344827582" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.54456397249999999" green="0.54456397249999999" blue="0.54456397249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="8Tq-lZ-UJq" firstAttribute="leading" secondItem="7c5-9u-2id" secondAttribute="leading" id="0HZ-5D-70L"/>
                             <constraint firstItem="niv-8Q-Ab7" firstAttribute="leading" secondItem="7c5-9u-2id" secondAttribute="leading" id="CTs-hV-AxX"/>
                             <constraint firstAttribute="trailing" secondItem="niv-8Q-Ab7" secondAttribute="trailing" id="Ejr-8r-8Pz"/>
+                            <constraint firstItem="niv-8Q-Ab7" firstAttribute="top" secondItem="8Tq-lZ-UJq" secondAttribute="bottom" id="G3B-CG-KuH"/>
+                            <constraint firstAttribute="trailing" secondItem="8Tq-lZ-UJq" secondAttribute="trailing" id="qbL-ub-b84"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="5H8-KI-yxW" id="W8V-qh-1nK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSA-aS-HHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="yEM-bl-Pfm">
+                    <connections>
+                        <outlet property="delegate" destination="rJI-sI-Zg0" id="ROH-ZJ-f4G"/>
+                        <outlet property="searchContentsController" destination="rJI-sI-Zg0" id="dCX-R0-pGn"/>
+                        <outlet property="searchResultsDataSource" destination="rJI-sI-Zg0" id="PbN-oo-9W9"/>
+                        <outlet property="searchResultsDelegate" destination="rJI-sI-Zg0" id="bxV-dv-YYm"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="6iC-Nl-PGa">
+                    <connections>
+                        <outlet property="delegate" destination="rJI-sI-Zg0" id="CEx-zN-UDR"/>
+                        <outlet property="searchContentsController" destination="rJI-sI-Zg0" id="PNg-QU-u0i"/>
+                        <outlet property="searchResultsDataSource" destination="rJI-sI-Zg0" id="N13-8y-1bE"/>
+                        <outlet property="searchResultsDelegate" destination="rJI-sI-Zg0" id="4rw-DS-2bi"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="ecB-I8-hMz"/>
+                <searchDisplayController id="5H8-KI-yxW">
+                    <connections>
+                        <outlet property="delegate" destination="rJI-sI-Zg0" id="OoY-pN-wmu"/>
+                        <outlet property="searchBar" destination="8Tq-lZ-UJq" id="0Fd-Qv-n9G"/>
+                        <outlet property="searchContentsController" destination="rJI-sI-Zg0" id="lZH-Xc-Sf1"/>
+                        <outlet property="searchResultsDataSource" destination="rJI-sI-Zg0" id="MRW-J3-Ool"/>
+                        <outlet property="searchResultsDelegate" destination="rJI-sI-Zg0" id="Y91-8C-4sP"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-310" y="1197"/>
         </scene>
